@@ -17,7 +17,7 @@ class Config:
     # Those should be loaded from ENV
     allowed_ip_list_endpoint = "https://ip-ranges.amazonaws.com/ip-ranges.json"
     allowed_region = "eu-central-1"
-    logging_level = "WARN"
+    logging_level = "debug"
 
     def __init__(self, **kwargs):
         # Allow overriding defaults using keyword arguments

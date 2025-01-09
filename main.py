@@ -80,8 +80,7 @@ def authorize():
         return jsonify({'error': 'No IP provided'}), 401
     if is_allowed(client_ip):
         return jsonify({'status': 'OK'}), 200
-    else:
-        return jsonify({'status': 'Unauthorized'}), 401
+    return jsonify({'status': 'Unauthorized'}), 401
 
 
 if __name__ == "__main__":
